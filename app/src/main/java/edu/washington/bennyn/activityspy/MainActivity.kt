@@ -12,6 +12,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        if (savedInstanceState != null) {
+            Log.i(TAG, "There's already data.")
+        } else {
+            Log.i(TAG, "No data present.")
+        }
+
         Log.i(TAG, "onCreate event fired")
     }
 
